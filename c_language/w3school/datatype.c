@@ -13,5 +13,6 @@ int main()
     printf("Value of c is %lf\n", c); // %lf for double
     printf("Value of d is %c\n", d); // %c for char
     printf("Value of e is %s\n", e); // %s for string
+    print("Size of int is %lu\n", sizeof(a)); // %lu for unsigned long int
     return 0;
 }
