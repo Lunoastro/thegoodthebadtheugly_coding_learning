@@ -8,7 +8,10 @@
 ## Imports
 
 ``#include <stdio.h>`` let's one work with input and output
+
 ``#include <stdbool.h>`` Allows for boolean operations (uses the %d signifier)
+
+``#include <string.h>``Allows for operations on strings
 
 ## Infos
 
@@ -21,3 +24,4 @@ Ternary operators are the same as they are in Java ``variable = (condition) ? ex
 The same can also be said for switches and for_loops as they also follow the same design.
 
 Arrays seem to be immutable no matter if you declare it with `[num]` or `[]`
+The & operator is used to get the address of a variable to which the user input will be saved to
