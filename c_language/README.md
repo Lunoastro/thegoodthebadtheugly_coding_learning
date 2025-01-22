@@ -27,3 +27,5 @@ The same can also be said for switches and for_loops as they also follow the sam
 
 Arrays seem to be immutable no matter if you declare it with `[num]` or `[]`
 The & operator is used to get the address of a variable to which the user input will be saved to
+
+An enum is a special type that represents a group of constants (unchangeable values).
