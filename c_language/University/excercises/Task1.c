@@ -87,7 +87,6 @@ int Tsort(int A[],int length, int sum){
 Task 4
 A subarray is a sequence of contiguous elements of an array. Write a C function int zeroSubarray(int A[], int n) that takes an array A of n integers and returns 1 if it is possible to find a subarray 
 where the sum over the integers in the subarray is equal to zero. Otherwise, the function returns 0.
-
  */
 
 
