@@ -22,12 +22,8 @@ void compression(char string[],int n){
         if (string[i] == string[i+1]){ // If the next character is the same as the current character
             count++; // Increase the count
         } else { // otherwise
-            if (count > 1){ // If the count is greater than 1
-                printf("%d%c", count, string[i]); // Print the count and the character
-            } else {
-                printf("%c", string[i]); // Print the character
-            }
-            count = 1;// reset it to 1
+            printf("%d%c", count, string[i]); // Print the count and the character
+            count = 1; // Reset the count
         }
     }
 }
@@ -67,11 +63,8 @@ int T(int A[], int length, int sum){
 
 
 
-/*Task 3
-Assume that integers of the array A in Task 2 are sorted in an ascending order. The task is to find if there exist two integers in A whose sum is equal to t.
-1
-
-Department of Informatics Database Technology Group University of Zurich Prof. Dr. Michael B ̈ohlen
+/*
+Task 3
 3.1: Write a pseudocode algorithm that returns 1 if there exist two integers in A whose sum is equal to t, returns 0 otherwise. Determine and explain the number of accesses made to the integers of array A in your solution. Can you reduce the number of accesses to make your solution more efficient?
 3.2: Write the C function int TSort(int A[], int n, int t) that returns 1 if there exist two integers in A whose sum is equal to t, returns 0 otherwise.
 */
