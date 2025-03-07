@@ -1,8 +1,14 @@
 
 # Sources used
 
+## For Theory
+
 - [W3Schools](https://www.w3schools.com/c/index.php)
 - [geeksforgeeks](https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/)
+
+## For Practices
+
+- [cryptohack](https://cryptohack.org/courses)
 
 # Notes
 
@@ -97,3 +103,7 @@ Example
 ### Stack Memory
 
 Stack memory is a type of dynamic memory allocated for variables inside functions, which is freed when the function returns, and excessive recursion can lead to stack overflow (due to the function taking up too much stack memory).
+
+### coding practices
+
+It seems to be good coding practice to point the pointer to NULL to avoid using freed memory.
