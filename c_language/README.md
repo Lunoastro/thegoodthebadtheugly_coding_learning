@@ -4,7 +4,7 @@
 ## For Theory
 
 - [W3Schools](https://www.w3schools.com/c/index.php)
-- [geeksforgeeks](https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/)
+- [geeksforgeeks](https://www.geeksforgeeks.org)
 
 ## For Practices
 
