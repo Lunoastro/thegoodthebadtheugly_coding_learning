@@ -3,12 +3,15 @@
 
 ## For Theory
 
-- [W3Schools](https://www.w3schools.com/c/index.php)
-- [geeksforgeeks](https://www.geeksforgeeks.org)
+* [W3Schools](https://www.w3schools.com/c/index.php)
+* [geeksforgeeks](https://www.geeksforgeeks.org)
+* Brian “Beej Jorgensen” Hall
+  * [Guide to C Programming](https://beej.us/guide/bgc/html/split/)
+  * [Guide to Network Programming](https://beej.us/guide/bgnet/html/split/what-is-a-socket.html)
 
 ## For Practices
 
-- [cryptohack](https://cryptohack.org/courses)
+* [cryptohack](https://cryptohack.org/courses)
 
 # Notes
 
@@ -38,6 +41,28 @@ Arrays seem to be immutable no matter if you declare it with `[num]` or `[]`
 The & operator is used to get the address of a variable to which the user input will be saved to
 
 An enum is a special type that represents a group of constants (unchangeable values).
+
+## Functions
+
+```c
+#include <stdio.h>
+
+void increment(int a)
+{
+    a++;
+}
+
+int main(void)
+{
+    int i = 10;
+
+    increment(i);
+
+    printf("i == %d\n", i);  //will print 10 even if 11 is expected
+}
+```
+
+> It’s all about the fact that the expressions you pass to functions get copied onto their corresponding parameters. The parameter is a copy, not the original. ([Guide to C Programming](https://beej.us/guide/bgc/html/split/functions.html#functions))
 
 ## Memory
 
