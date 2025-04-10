@@ -64,6 +64,8 @@ int main(void)
 
 > It’s all about the fact that the expressions you pass to functions get copied onto their corresponding parameters. The parameter is a copy, not the original. ([Guide to C Programming](https://beej.us/guide/bgc/html/split/functions.html#functions))
 
+If a function, that has a been defined further down 
+
 ## Memory
 
 ### Static Memory
@@ -128,6 +130,10 @@ Example
 ### Stack Memory
 
 Stack memory is a type of dynamic memory allocated for variables inside functions, which is freed when the function returns, and excessive recursion can lead to stack overflow (due to the function taking up too much stack memory).
+
+### Pointers
+
+The "->" allows
 
 ### coding practices
 
