@@ -64,6 +64,8 @@ int main(void)
 
 > It’s all about the fact that the expressions you pass to functions get copied onto their corresponding parameters. The parameter is a copy, not the original. ([Guide to C Programming](https://beej.us/guide/bgc/html/split/functions.html#functions))
 
+If a function, that has a been defined further down 
+
 ## Memory
 
 ### Static Memory
@@ -129,6 +131,26 @@ Example
 
 Stack memory is a type of dynamic memory allocated for variables inside functions, which is freed when the function returns, and excessive recursion can lead to stack overflow (due to the function taking up too much stack memory).
 
+### Pointers
+
+The "->" operator allows access to members of a structure through a pointer. It is used to dereference the pointer and access the structure's members in a single step.
+
+Example:
+
+```c
+    struct Student {
+        char name[50];
+        int age;
+    };
+
+    struct Student *ptr, student1;
+    ptr = &student1;
+
+    // Using the "->" operator to access members of the structure
+    ptr->age = 20;
+    strcpy(ptr->name, "John Doe");
+
+    printf("Name: %s, Age: %d", ptr->name, ptr->age);
 ### coding practices
 
 It seems to be good coding practice to point the pointer to NULL to avoid using freed memory.
