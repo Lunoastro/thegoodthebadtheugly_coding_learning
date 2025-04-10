@@ -16,5 +16,5 @@ int main(){
     head -> data = 1; // head node now holds 1
     head -> next = NULL; // The next node is NULL, indicating the end of the list
     printf("head node data: %d\n", head -> data); // Print the data of the head node
-    return 1;
+    return 0;
 }
