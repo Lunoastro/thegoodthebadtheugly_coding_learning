@@ -43,7 +43,7 @@ struct node* insert(struct node* p, int toInsert)
 // p makes a copy of the inserted parameter node
 {
     struct node* q;
-    if ( p -> value > toInsert || p == NULL) {
+    if (p == NULL || p->value > toInsert) {
         q = malloc(sizeof(struct node));
         q -> value = toInsert;
         q -> next = p;
