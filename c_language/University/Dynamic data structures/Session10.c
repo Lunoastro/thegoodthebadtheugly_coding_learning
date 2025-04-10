@@ -77,7 +77,7 @@ void delete_x(struct node** head, int x){
 void insertAtPosition(struct node *p, int data, int position) {
     struct node* newNode = createNode(data);
     if (position == 0) {
-        insertAtFirst(p,data);
+        insertAtFirst(&p, data);
         return;
     }
     struct node* temp = p;
